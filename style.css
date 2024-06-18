@@ -1,0 +1,116 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    margin: 0 0 30px;
+    text-align: center;
+    color: #333;
+}
+
+.todo-form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todo-form input[type="text"] {
+    
+    width:400px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 30px;
+    font-size: 18px;
+}
+
+.todo-form button {
+    padding: 15px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    flex-shrink: 0; 
+}
+
+.todo-form button:hover {
+    background-color: #218838;
+}
+
+ul#task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul#task-list li {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    transition: background-color 0.3s;
+}
+
+ul#task-list li:hover {
+    background-color: #f1f1f1;
+}
+
+ul#task-list li.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+ul#task-list form {
+    margin: 0;
+}
+ul#task-list .task-actions {
+    display: flex;
+    gap: 10px;
+}
+
+ul#task-list button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+ul#task-list button[type="submit"] {
+    background-color: #007bff;
+}
+
+ul#task-list button:hover {
+    background-color: #c82333;
+}
+
+ul#task-list button[type="submit"]:hover {
+    background-color: #0056b3;
+}
